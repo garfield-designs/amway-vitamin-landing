@@ -3,162 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amway Vitamins Landing</title>
+  <title>Targeted Vitamin & Wellness Solutions</title>
 
   <style>
     body {
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f9f9f9;
-      padding: 40px;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
 
-    details {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    summary {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #0f4c81;
-      cursor: pointer;
-      list-style: none;
+    header {
+      background: #0f4c81;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
     }
 
-    summary::-webkit-details-marker {
-      display: none;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
     }
 
-    .product {
-      border-top: 1px solid #ddd;
-      padding: 20px 0;
-    }
-
-    .product h3 {
-      margin-bottom: 8px;
-      color: #0f4c81;
-    }
-
-    .product p {
-      margin: 0 0 10px 0;
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      margin-top: 25px;
+      padding: 14px 30px;
       background: #ff9800;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
-      margin-right: 10px;
     }
 
-    .delivery {
-      background: #4caf50;
+    .section {
+      background: #fff;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
     }
 
-    .view-all {
-      display: inline-block;
-      margin-top: 15px;
-      font-size: 0.95rem;
+    .section-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #0f4c81;
+    }
+
+    .image-placeholder {
+      flex: 1;
+      min-width: 250px;
+      height: 200px;
+      background: #e0e0e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .trust {
+      background: #eef4f8;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #0f4c81;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
 
-<h2>Vitamins & Supplements</h2>
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Targeted Vitamin & Wellness Solutions</h1>
+    <p>
+      High-quality Amway™ supplements for men, women, kids, prostate health,
+      and daily hydration support.
+    </p>
+    <a href="#products" class="btn">Shop by Health Need</a>
+  </header>
 
-<!-- MEN'S HEALTH -->
-<details open>
-  <summary>Men’s Health Vitamins</summary>
-  <p>Daily vitamins and supplements designed to support energy, immune health, and overall wellness for men.</p>
+  <div class="container" id="products">
 
-  <div class="product">
-    <h3>Nutrilite™ Men’s Daily Multivitamin Tablets</h3>
-    <p>Complete daily multivitamin for men.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Men%E2%80%99s-Daily-Multivitamin-Tablets-p-125557" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
+    <!-- MEN -->
+    <div class="section">
+      <div class="section-text">
+        <h2>Men’s Health Vitamins</h2>
+        <p>
+          Daily vitamins and supplements designed to support energy, immune
+          health, and overall wellness for men.
+        </p>
+        <a href="mens-vitamins.html" class="btn">View Men’s Health Products</a>
+      </div>
+      <div class="image-placeholder">
+        Men’s Vitamins Image
+      </div>
+    </div>
+
+    <!-- WOMEN -->
+    <div class="section">
+      <div class="section-text">
+        <h2>Women’s Health Vitamins</h2>
+        <p>
+          Nutritional support for women’s unique health needs including bone
+          health, energy, and immune support.
+        </p>
+        <a href="womens-vitamins.html" class="btn">View Women’s Health Products</a>
+      </div>
+      <div class="image-placeholder">
+        Women’s Vitamins Image
+      </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="section">
+      <div class="section-text">
+        <h2>Kids’ Vitamins & Nutrition</h2>
+        <p>
+          Gentle, age-appropriate vitamins to support growth, immunity,
+          and daily nutrition for children.
+        </p>
+        <a href="kids-vitamins.html" class="btn">View Kids’ Vitamins</a>
+      </div>
+      <div class="image-placeholder">
+        Kids’ Vitamins Image
+      </div>
+    </div>
+
+    <!-- PROSTATE -->
+    <div class="section">
+      <div class="section-text">
+        <h2>Prostate Health Support</h2>
+        <p>
+          Specialized supplements formulated to help support prostate health
+          and urinary function.
+        </p>
+        <a href="prostate-health.html" class="btn">View Prostate Health Supplements</a>
+      </div>
+      <div class="image-placeholder">
+        Prostate Health Image
+      </div>
+    </div>
+
+    <!-- VITAMIN WATER -->
+    <div class="section">
+      <div class="section-text">
+        <h2>Vitamin Water & Twist Tubes</h2>
+        <p>
+          Convenient vitamin supplementation through flavored water enhancer
+          twist tubes—perfect for hydration on the go.
+        </p>
+        <a href="vitamin-water.html" class="btn">View Vitamin Water Products</a>
+      </div>
+      <div class="image-placeholder">
+        Vitamin Water Image
+      </div>
+    </div>
+
+    <!-- TRUST SECTION -->
+    <div class="trust">
+      <h2>Why Choose Amway™</h2>
+      <p>
+        All products are purchased directly from the official Amway™ website
+        through a registered Independent Business Owner (IBO).
+      </p>
+      <p>
+        ✔ Science-backed formulations &nbsp; ✔ High-quality ingredients
+        &nbsp; ✔ Trusted global brand
+      </p>
+    </div>
+
   </div>
 
-  <div class="product">
-    <h3>Nutrilite™ Men’s Pack</h3>
-    <p>Convenient daily supplement pack.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Men%E2%80%99s-Pack-p-123365" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-
-  <div class="product">
-    <h3>Nutrilite™ Organics Men’s Daily Multi Gummies</h3>
-    <p>Organic daily multivitamin gummies.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Organics-Men%E2%80%99s-Daily-Multi-Gummies-p-125561" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-
-  <a class="view-all" href="mens-vitamins.html">View full Men’s Vitamins page →</a>
-</details>
-
-<!-- WOMEN'S HEALTH -->
-<details>
-  <summary>Women’s Health Vitamins</summary>
-  <p>Nutritional support for women’s unique health needs including bone health, energy, and immune support.</p>
-
-  <div class="product">
-    <h3>Nutrilite™ Daily Women’s Multivitamin Tablets</h3>
-    <p>Supports bone health, energy, and immunity for women.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Daily-Women's-Multivitamin-Tablets-p-EXAMPLE" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-
-  <div class="product">
-    <h3>Nutrilite™ Women's Pack</h3>
-    <p>Daily supplement pack combining essential vitamins and nutrients for women.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Women's-Pack-p-EXAMPLE" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-</details>
-
-<!-- KIDS -->
-<details>
-  <summary>Kids’ Vitamins & Nutrition</summary>
-  <p>Gentle, age-appropriate vitamins to support growth, immunity, and daily nutrition for children.</p>
-
-  <div class="product">
-    <h3>Nutrilite™ Kids Chewable Multivitamin</h3>
-    <p>Supports growth and immunity in children.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Kids-Chewable-Multivitamin-p-EXAMPLE" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-</details>
-
-<!-- PROSTATE -->
-<details>
-  <summary>Prostate Health Support</summary>
-  <p>Specialized supplements formulated to help support prostate health and urinary function.</p>
-
-  <div class="product">
-    <h3>Nutrilite™ Prostate Health</h3>
-    <p>Supports prostate health and normal urinary function.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Prostate-Health-p-EXAMPLE" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-</details>
-
-<!-- VITAMIN WATER & TWIST TUBES -->
-<details>
-  <summary>Vitamin Water & Twist Tubes</summary>
-  <p>Convenient vitamin supplementation through flavored water enhancer twist tubes—perfect for hydration on the go.</p>
-
-  <div class="product">
-    <h3>Nutrilite™ Vitamin Water Twist Tubes</h3>
-    <p>Flavored water enhancer with vitamins for daily nutrition.</p>
-    <a class="btn" href="https://www.amway.com/en_US/Nutrilite%E2%84%A2-Vitamin-Water-Twist-Tubes-p-EXAMPLE" target="_blank">View on Amway</a>
-    <a class="btn delivery" href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank">Order for Personal Delivery</a>
-  </div>
-</details>
+  <!-- FOOTER -->
+  <footer>
+    <h2>Start Your Wellness Journey Today</h2>
+    <p>
+      <a href="#">Shop Amway Products</a> |
+      <a href="#">Contact Your Amway IBO</a>
+    </p>
+    <p style="font-size: 0.9rem;">
+      Amway™ products are sold by Independent Business Owners. This page is not
+      an official Amway corporate website.
+    </p>
+  </footer>
 
 </body>
 </html>
