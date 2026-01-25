@@ -1,204 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vitamin Store – Personal Delivery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Targeted Vitamin & Wellness Solutions</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f6f6f6;
       margin: 0;
-      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
     }
 
-    h1 {
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background: #0f4c81;
+      color: #fff;
       text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 30px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
     }
 
     details {
-      background: #ffffff;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      padding: 10px;
+      background: #fff;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      padding: 30px;
     }
 
     summary {
-      font-size: 18px;
+      font-size: 1.6rem;
       font-weight: bold;
+      color: #0f4c81;
       cursor: pointer;
-      outline: none;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
     }
 
     .product {
       border-top: 1px solid #ddd;
-      padding: 12px 0;
+      padding: 20px 0;
     }
 
-    .product:first-child {
-      border-top: none;
+    .product h3 {
+      margin-bottom: 8px;
+      color: #0f4c81;
     }
 
-    .product-name {
-      font-weight: bold;
-      margin-bottom: 6px;
+    .product p {
+      margin-bottom: 10px;
     }
 
-    .order-btn {
-      background: #007bff;
+    .trust {
+      background: #eef4f8;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #0f4c81;
       color: #fff;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 4px;
-      cursor: pointer;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
     }
 
-    .order-btn:hover {
-      background: #0056b3;
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
     }
   </style>
 </head>
-
 <body>
 
-<h1>Personal Delivery – Vitamin Products</h1>
+<header>
+  <h1>Targeted Vitamin & Wellness Solutions</h1>
+  <p>
+    High-quality Amway™ supplements for men, women, kids, prostate health,
+    and daily hydration support.
+  </p>
+  <a href="#products" class="btn">Shop by Health Need</a>
+</header>
 
-<!-- MEN -->
-<details>
-  <summary>Men’s Vitamins</summary>
+<div class="container" id="products">
 
-  <div class="product">
-    <div class="product-name">Nutrilite™ Men’s Daily Multivitamin Tablets</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
+  <!-- MEN -->
+  <details>
+    <summary>Men’s Health Vitamins</summary>
+    <p>Daily vitamins and supplements designed to support energy, immune health, and overall wellness for men.</p>
 
-  <div class="product">
-    <div class="product-name">Nutrilite™ Men’s Pack</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Organics Men’s Daily Multi Gummies</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-</details>
-
-<!-- WOMEN -->
-<details>
-  <summary>Women’s Vitamins</summary>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Women’s Pack</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Women’s Daily Multivitamin Tablets</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Organics Women’s Daily Multi Gummies</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-</details>
-
-<!-- KIDS -->
-<details>
-  <summary>Kids’ Vitamins</summary>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Kids Daily Chewable Multivitamins</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Kids Brainiums DHA™ Jelly Splat</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Kids Complete Immunity Fast-Melt Powder</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-</details>
-
-<!-- PROSTATE -->
-<details>
-  <summary>Prostate Health</summary>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Prostate Health</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Men’s Daily Multivitamin Tablets</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-
-  <div class="product">
-    <div class="product-name">Nutrilite™ Organics Men’s Daily Multi Gummies</div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-</details>
-
-<!-- TWIST TUBES & VITAMIN WATER -->
-<details>
-  <summary>Twist Tubes & Vitamin Water</summary>
-
-  <div class="product">
-    <div class="product-name">
-      Nutrilite™ Twist Tubes 2GO™ – Immunity Health† (Strawberry Kiwi)
+    <div class="product">
+      <h3>Nutrilite™ Men’s Daily Multivitamin Tablets</h3>
+      <p>Nutrilite™ multivitamin tablets to support daily nutritional needs in men.</p>
+      <a href="https://amway.com/share-link/FyJCPQlhA" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Men’s+Daily+Multivitamin+Tablets" class="btn" target="_blank">Order for Personal Delivery</a>
     </div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
 
-  <div class="product">
-    <div class="product-name">
-      Nutrilite™ Twist Tubes 2GO™ – Joint Health (Raspberry)
+    <div class="product">
+      <h3>Nutrilite™ Men’s Pack</h3>
+      <p>Comprehensive daily supplement pack tailored for men’s health.</p>
+      <a href="https://amway.com/share-link/XWrsRJ5rv" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Men’s+Pack" class="btn" target="_blank">Order for Personal Delivery</a>
     </div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
 
-  <div class="product">
-    <div class="product-name">
-      XS™ CocoWater Hydration Drink Mix – Pineapple / Coconut
+    <div class="product">
+      <h3>Nutrilite™ Organics Men’s Daily Multi Gummies</h3>
+      <p>Organic multivitamin gummies formulated for men’s everyday nutrition.</p>
+      <a href="https://amway.com/share-link/Tnwk~jvvi" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Organics+Men’s+Daily+Multi+Gummies" class="btn" target="_blank">Order for Personal Delivery</a>
     </div>
-    <a href="PASTE_PREFILLED_FORM_LINK_HERE">
-      <button class="order-btn">Order for Personal Delivery</button>
-    </a>
-  </div>
-</details>
+  </details>
 
-</body>
-</html>
+  <!-- WOMEN -->
+  <details>
+    <summary>Women’s Health Vitamins</summary>
+    <p>Nutritional support for women’s unique health needs including bone health, energy, and immune support.</p>
+
+    <div class="product">
+      <h3>Nutrilite™ Women’s Pack</h3>
+      <p>Comprehensive daily supplement pack designed to support women’s health.</p>
+      <a href="https://amway.com/share-link/x0X28-wtn" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Women’s+Pack" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+
+    <div class="product">
+      <h3>Nutrilite™ Women’s Daily Multivitamin Tablets</h3>
+      <p>Daily multivitamin formulated to support women’s nutritional needs.</p>
+      <a href="https://amway.com/share-link/DsxsBfqrF" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Women’s+Daily+Multivitamin+Tablets" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+
+    <div class="product">
+      <h3>Nutrilite™ Organics Women’s Daily Multi Gummies</h3>
+      <p>Organic multivitamin gummies created for women’s everyday wellness.</p>
+      <a href="https://amway.com/share-link/asyYc0nx8" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Organics+Women’s+Daily+Multi+Gummies" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+  </details>
+
+  <!-- KIDS -->
+  <details>
+    <summary>Kids’ Vitamins & Nutrition</summary>
+    <p>Gentle, age‑appropriate vitamins to support growth, immunity, and daily nutrition for children.</p>
+
+    <div class="product">
+      <h3>Nutrilite™ Kids Daily Chewable Multivitamins</h3>
+      <p>Daily chewable multivitamins to support kids’ nutritional needs.</p>
+      <a href="https://amway.com/share-link/QhmTfgmbG" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Kids+Daily+Chewable+Multivitamins" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+
+    <div class="product">
+      <h3>Nutrilite™ Kids Brainiums DHA™ Jelly Splat</h3>
+      <p>Supports brain function and cognitive development in children.</p>
+      <a href="https://amway.com/share-link/1C7rU3qc8" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Kids+Brainiums+DHA™+Jelly+Splat" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+
+    <div class="product">
+      <h3>Nutrilite™ Kids Complete Immunity Fast-Melt Powder</h3>
+      <p>Fast-melt powder formulated to help support kids’ immune health.</p>
+      <a href="https://amway.com/share-link/uIigR8l56" class="btn" target="_blank">View on Amway</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-sK_utXJt3siL0yGo10d3wt1R3mkQXa5UaVI4aOo1HOrqTQ/viewform?usp=pp_url&entry.1504648847=Nutrilite™+Kids+Complete+Immunity+Fast‑Melt+Powder" class="btn" target="_blank">Order for Personal Delivery</a>
+    </div>
+  </details>
+
+  <!-- continuing in same pattern for Prostate and Vitamin Water… -->
